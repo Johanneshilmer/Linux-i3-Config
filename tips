@@ -3,3 +3,18 @@ This file is for small tips and tricks.
 - If you want to know with "class" name a application have, run in terminal:
     xprop | grep WM_CLASS | awk '{ print $4 }'
   and then klick on the application you want to know the name on.
+
+
+- If you want to scale your UI create 2 files in /home/
+    1. .xinitrc
+    code: xrdb -merge ~/.Xresources
+
+    2. .Xresources
+    code: 
+    SCALING x96
+    300% 288
+    200% 192
+    150% 144
+    125% 120
+    100% 96
+    Xft.dpi: 110
