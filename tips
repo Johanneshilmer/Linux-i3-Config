@@ -18,3 +18,9 @@ This file is for small tips and tricks.
     125% 120
     100% 96
     Xft.dpi: 110
+
+
+- Connect to wifi.
+    1. show wifi "nmcli dev wifi"
+    2. Connect to wifi
+    nmcli device wifi connect NETWORKNAME password PASSWORD
