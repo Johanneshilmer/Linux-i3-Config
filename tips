@@ -24,3 +24,25 @@ This file is for small tips and tricks.
     1. show wifi "nmcli dev wifi"
     2. Connect to wifi
     nmcli device wifi connect NETWORKNAME password PASSWORD
+
+- Connect Bluetooth
+    1. bluetoothctl
+    2. # list out the commands available
+        help
+
+        # scan for new devices and stop when you see your device show up
+        scan on
+        scan off
+        
+        # list devices
+        devices
+        paired-devices
+        
+        # pair the device
+        pair XX:XX:XX:XX:XX:XX
+        
+        # now your device should show up in the paired list
+        paired-devices
+        
+        # connet the device
+        connect XX:XX:XX:XX:XX:XX
